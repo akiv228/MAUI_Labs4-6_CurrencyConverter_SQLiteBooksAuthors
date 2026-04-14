@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Lab1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Lab1.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Lab1">
+
+    <FlyoutItem Title="Калькулятор" FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Route="CalculatorPage" ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="История" FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Route="HistoryPage" ContentTemplate="{DataTemplate local:HistoryPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="ProgressBar" FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Route="ProgressBarPage" ContentTemplate="{DataTemplate local:ProgressBarPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="SQLite" FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Route="SQLitePage" ContentTemplate="{DataTemplate local:SQLitePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Converter" FlyoutDisplayOptions="AsSingleItem">
+        <ShellContent Route="ConverterPage" ContentTemplate="{DataTemplate local:ConverterPage}" />
+    </FlyoutItem>
+</Shell>
